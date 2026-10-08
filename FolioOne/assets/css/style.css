@@ -237,3 +237,152 @@ h6 {
   font-size: 1.5rem;
   color: var(--accent-color);
 }
+
+/* ==============================================
+   Feane Template - Food & Client Section Styles
+   ============================================== */
+
+.food_section {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.food_section .heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.food_section .heading_container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.food_section .filters_menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 30px 0 20px 0;
+  gap: 8px;
+}
+
+.food_section .filters_menu li {
+  padding: 7px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.food_section .filters_menu li.active,
+.food_section .filters_menu li:hover {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.food_section .box {
+  position: relative;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f1f2f3 25px, #222831 25px);
+  color: #ffffff;
+}
+
+.food_section .box > div > .img-box {
+  background: #f1f2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 215px;
+  border-radius: 0 0 0 45px;
+  margin: -1px;
+  padding: 25px;
+}
+
+.food_section .box > div > .img-box img {
+  max-width: 100%;
+  max-height: 145px;
+  transition: all 0.2s;
+}
+
+.food_section .box:hover > div > .img-box img {
+  transform: scale(1.1);
+}
+
+.food_section .box .detail-box {
+  padding: 25px;
+}
+
+.food_section .box .detail-box h5 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.food_section .box .detail-box p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.food_section .box .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food_section .box .options h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+  text-align: right;
+}
+
+.food_section .box .options .client_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food_section .box .options .client_box .img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.food_section .box .options .client_box .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 4px solid #ffbe33;
+  position: relative;
+  object-fit: cover;
+}
+
+.food_section .box .options .client_box .img-box::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffbe33;
+  transform: rotate(45deg) translateX(-50%);
+  z-index: 1;
+}
