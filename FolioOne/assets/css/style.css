@@ -1,3 +1,4 @@
+/* 1. ödev */
 :root {
   --default-font:
     "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
@@ -238,10 +239,7 @@ h6 {
   color: var(--accent-color);
 }
 
-/* ==============================================
-   Feane Template - Food & Client Section Styles
-   ============================================== */
-
+/* 2. ödev */
 .food_section {
   padding-top: 60px;
   padding-bottom: 90px;
@@ -385,4 +383,296 @@ h6 {
   background-color: #ffbe33;
   transform: rotate(45deg) translateX(-50%);
   z-index: 1;
+}
+
+/* 3. ödev */
+.bolum-kapsayici {
+  --background-color: #ffffff;
+  --default-color: #272829;
+  --heading-color: #050d18;
+  --accent-color: #149ddd;
+  --surface-color: #ffffff;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 40px 24px 60px 24px;
+  overflow: hidden;
+}
+
+.icerik-kutusu {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.bolum-baslik-alani {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.ana-baslik-metni {
+  font-family: var(--heading-font);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.ana-baslik-metni::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.iki-kolonlu-izgara {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+@media (max-width: 991px) {
+  .iki-kolonlu-izgara {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.kolon {
+  display: flex;
+  flex-direction: column;
+}
+
+.kategori-basligi {
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.kategori-basligi-ikinci {
+  margin-top: 30px;
+}
+
+.zaman-cizelgesi {
+  position: relative;
+}
+
+.cizelge-adimi {
+  padding: 0 0 25px 22px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.cizelge-adimi-son {
+  padding-bottom: 5px;
+}
+
+.cizelge-adimi::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -9px;
+  top: 2px;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+.egitim-ust-bilgi {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.egitim-ikonu {
+  font-size: 24px;
+  color: var(--accent-color);
+  line-height: 1.1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.egitim-metin-grubu {
+  display: flex;
+  flex-direction: column;
+}
+
+.alt-baslik-etiketi {
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.derece-basligi {
+  font-family: var(--heading-font);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 4px;
+}
+
+.tarih-etiketi {
+  font-size: 13px;
+  background-color: #eef9ff;
+  color: var(--default-color);
+  padding: 4px 12px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+.kurum-bilgisi {
+  font-style: italic;
+  font-size: 14.5px;
+  color: var(--default-color);
+  margin: 4px 0 10px 0;
+  display: block;
+}
+
+.aciklama-metni {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--default-color);
+  margin-bottom: 14px;
+}
+
+.beceri-kutusu {
+  background-color: #f4fafd;
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.beceri-satiri {
+  margin-bottom: 12px;
+}
+
+.beceri-satiri:last-child {
+  margin-bottom: 0;
+}
+
+.beceri-baslik-bari {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--heading-font);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.yuzde-degeri {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.ilerleme-arkaplani {
+  background-color: #dce7ed;
+  height: 10px;
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ilerleme-dolgusu {
+  height: 10px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+
+.ekip-alani {
+  display: flex;
+  align-items: center;
+  padding: 4px 0 8px 0;
+}
+
+.ekip-avatarlari {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.avatar-koleksiyonu {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-resmi {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+.avatar-ust-uste {
+  margin-left: -12px;
+}
+
+.ekip-metin-alani {
+  margin-left: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.ekip-rakam {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.ekip-aciklama {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.deneyim-unvan-basligi {
+  font-family: var(--heading-font);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  margin-bottom: 6px;
+}
+
+.madde-listesi {
+  padding-left: 18px;
+  margin: 6px 0 0 0;
+  list-style-type: disc;
+}
+
+.madde-listesi li {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--default-color);
+  padding-bottom: 8px;
+}
+
+.madde-listesi li:last-child {
+  padding-bottom: 0;
 }
